@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A read on where AI fits in ANIMO BIONICS' stack. And where it doesn't.</title>
+  <meta name="description" content="I read your site. The one sentence says robotic gloves and BCI. I want to bet the hard part right now is cross-user signal generalization, and the data science load is sitting on one person. Am I close?">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <img src="logo.svg" alt="ANIMO BIONICS" class="logo">
+    </div>
+  </header>
+
+  <main class="wrap" role="main">
+    <section class="hero">
+      <p class="eyebrow">For the team at ANIMO BIONICS</p>
+      <h1>A read on where AI fits in ANIMO BIONICS' stack. And where it doesn&rsquo;t.</h1>
+      <p class="lede">A bionics company that specializes in robotic gloves and Brain-Computer Interface technology. That is the whole sentence on your site. At this stage, that is probably the right amount of copy. What follows assumes the hard problems sit in signal classification, product positioning between rehab and consumer use, and running lean until the next round.</p>
+    </section>
+
+    <section class="body">
+      <p>Most teams at your size overbuild the AI layer. The sensor signal is noisy, the dataset is small, and the pull is to reach for a bigger model. Our read: 60% of what a wearable like yours needs is traditional code (device firmware, data logging, state machines). 30% is rule-based logic (safety envelopes, gesture thresholds, clinical protocols). 10% is real AI work (the classifier, the cross-user adaptation). A team that keeps those layers straight ships faster and debugs in hours instead of weeks.</p>
+
+      <div class="layer-stack" aria-label="Layer allocation for a wearable like yours">
+        <div class="layer">
+          <span class="layer-pct">60%</span>
+          <span class="layer-label">Traditional code</span>
+          <span class="layer-detail">Device firmware, data logging, state machines.</span>
+        </div>
+        <div class="layer">
+          <span class="layer-pct">30%</span>
+          <span class="layer-label">Rule-based logic</span>
+          <span class="layer-detail">Safety envelopes, gesture thresholds, clinical protocols.</span>
+        </div>
+        <div class="layer">
+          <span class="layer-pct">10%</span>
+          <span class="layer-label">Real AI work</span>
+          <span class="layer-detail">The classifier, cross-user adaptation.</span>
+        </div>
+      </div>
+
+      <p>We ran a version of this frame with Andrew Santus, CTO at Feeld. Scoped sprint. Workshop plus advisory, plus the Organizational Context Architecture and Strategic Operations Framework that come out of it. The output was a clean map of which parts of their stack belonged on which layer, and a short list of what to stop building. That same shape applies here.</p>
+
+      <p>The methodology behind it is Interpretable Context Methodology (ICM), published in ACM TiiS. Small teams get the most out of it: the payoff is measured in decisions avoided, not tools added. Repo: <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>.</p>
+
+      <p class="aside">Jake also built an online community to 22,000 members in 5 weeks.</p>
+
+      <p>One last thing. Eduba partners with <a href="https://nlplogix.com/" target="_blank" rel="noopener">NLP Logix</a> for work that sits below the orchestration layer. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. If the right first move is a production signal-processing pipeline rather than a methodology conversation, the handoff is in place.</p>
+    </section>
+
+    <section class="cta" id="talk" aria-labelledby="cta-title">
+      <h2 id="cta-title">30 minutes with Matt Creamer</h2>
+      <p class="cta-sub">Bring the one workflow you hate, or the one part of the stack you do not trust yet.</p>
+      <a class="btn" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book a 30-minute call</a>
+      <p class="cta-meta">Matt Creamer, CRO at Eduba. Calendar opens in a new tab.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <p>Prepared by Eduba. <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></p>
+      <p class="small">Built for a conversation at eMerge Americas Miami, booth SS65.</p>
+    </div>
+  </footer>
+</body>
+</html>
